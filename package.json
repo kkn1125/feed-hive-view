@@ -1,0 +1,71 @@
+{
+  "name": "feed-hive-view",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "author": {
+    "email": "chaplet01@gmail.com",
+    "name": "devkimson",
+    "url": "https://kkn1125.github.io"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "deploy": "cd dist && touch .nojekyll && git init && git add . && git commit -m \"Deploy to GitHub Pages\" && git push --force https://github.com/kkn1125/feed-hive-view.git master:gh-pages",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.4",
+    "@mui/material": "^6.4.4",
+    "@tanstack/react-query": "^5.66.0",
+    "axios": "^1.7.9",
+    "dayjs": "^1.11.13",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.5",
+    "recoil": "^0.7.7"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
+    "@eslint/js": "^9.19.0",
+    "@faker-js/faker": "^9.5.0",
+    "@storybook/addon-essentials": "^8.5.4",
+    "@storybook/addon-interactions": "^8.5.4",
+    "@storybook/addon-onboarding": "^8.5.4",
+    "@storybook/blocks": "^8.5.4",
+    "@storybook/react": "^8.5.4",
+    "@storybook/react-vite": "^8.5.4",
+    "@storybook/test": "^8.5.4",
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "eslint-plugin-storybook": "^0.11.2",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "nodemon": "^3.1.9",
+    "storybook": "^8.5.4",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tslib": "^2.8.1",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.22.0",
+    "vite": "^6.1.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}
