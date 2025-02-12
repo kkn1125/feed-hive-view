@@ -10,6 +10,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "test": "echo test",
     "build": "tsc -b && vite build",
     "deploy": "cd dist && touch .nojekyll && git init && git add . && git commit -m \"Deploy to GitHub Pages\" && git push --force https://github.com/kkn1125/feed-hive-view.git master:gh-pages",
     "lint": "eslint .",
