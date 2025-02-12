@@ -38,6 +38,7 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
+    base: MODE === "production" ? "/feed-hive-view/" : "/",
     server: {
       host: HOST,
       port: PORT,
